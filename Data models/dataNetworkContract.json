@@ -1,0 +1,72 @@
+{
+    "constitutiveAgreement": {
+        "dataNetwork": {
+            "parties": ["String"],
+            "members": ["String"],
+            "steeringCommittee": "String",
+            "codeOfConduct": "String",
+            "accessionAgreements": "String",
+            "datasetsTermsOfUse": [{
+                "dataProvider": "String",
+                "datatypes": [{
+                    "datatype": "String",
+                    "location": "String",
+                    "methodOfDistribution": "String"
+                }],
+                "description": "String",
+                "termsOfUse": "String"
+            }]
+        },
+        "parties": ["String"],
+        "members": ["String"],
+        "backgroundAndPurpose": "String",
+        "dataNetworkDescription": "String",
+        "termsAndConditions": "String",
+        "governanceModel": "Schema.ObjectId || String (TBD)"
+    },
+
+    "dataSharingContracts": [{
+        "serviceImport": {
+            "id": "Schema.ObjectId || String",
+            "name": "String",
+            "registration": "String",
+            "registeredOfficeAddress": "String",
+            "legalRepresentative": {
+                "name": "String",
+                "email": "String",
+                "profession": "String"
+            },
+            "dataProtectionOfficer": {
+                "name": "String",
+                "email": "String"
+            }
+        },
+        "serviceExport": {
+            "id": "Schema.ObjectId || String",
+            "name": "String",
+            "registration": "String",
+            "registeredOfficeAddress": "String",
+            "legalRepresentative": {
+                "name": "String",
+                "email": "String",
+                "profession": "String"
+            },
+            "dataProtectionOfficer": {
+                "name": "String",
+                "email": "String"
+            }
+        },
+        "dataSharing": [{
+            "purpose": {
+                "id": "Schema.ObjectId || String",
+                "name": "String",
+                "description": "String"
+            },
+            "datatypes": ["Schema.ObjectId || String"],
+            "processor": ["Schema.ObjectId || String"],
+            "conditions": "String"
+        }]
+    }],
+
+    "governanceModels": ["Schema.ObjectId || String (TBD)"]
+}
